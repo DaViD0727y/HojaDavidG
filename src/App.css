@@ -1,0 +1,239 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container { /* Contenedor principal de la hoja de vida */
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilos de encabezados (aplican globalmente si no se sobreescriben) */
+h1, h2, h3 {
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.3em;
+    margin-top: 15px;
+}
+
+/* Estilos para el Encabezado (Tu Nombre, Contacto) */
+.encabezado-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la sección Acerca de (Resumen Profesional) */
+.acerca-section {
+    margin-bottom: 20px;
+}
+
+.acerca-section p {
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Estilos para la sección de Experiencia Laboral */
+.experience-section {
+    margin-bottom: 20px;
+}
+
+.experience-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-section ul li {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.experience-section ul li:before {
+    content: '•';
+    color: #0056b3;
+    position: absolute;
+    left: 0;
+}
+
+.job-title {
+    font-weight: bold;
+    color: #555;
+    display: inline-block;
+}
+
+.company {
+    font-style: italic;
+    color: #777;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.dates {
+    float: right;
+    color: #777;
+    font-size: 0.9em;
+}
+
+.job-description ul {
+    list-style: disc;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.job-description ul li {
+    margin-bottom: 5px;
+    padding-left: 0;
+}
+
+.job-description ul li:before {
+    content: '';
+}
+
+/* Estilos para la sección de Educación */
+.education-section {
+    margin-bottom: 20px;
+}
+
+.education-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education-section ul li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.education-section ul li:before {
+    content: '•';
+    color: #0056b3;
+    position: absolute;
+    left: 0;
+}
+
+.degree {
+    font-weight: bold;
+    color: #555;
+    display: inline-block;
+}
+
+.university {
+    font-style: italic;
+    color: #777;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.education-description {
+    margin-top: 5px;
+    color: #666;
+}
+
+/* Estilos para la sección de Habilidades */
+.skills-section {
+    margin-bottom: 20px;
+}
+
+.skills-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-section ul li {
+    background-color: #e9e9e9;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.95em;
+    white-space: nowrap;
+    border: 1px solid #ddd;
+    color: #444;
+    transition: background-color 0.2s ease;
+}
+
+.skills-section ul li:hover {
+    background-color: #dcdcdc;
+}
+
+.skills-section ul li:before {
+    content: '';
+}
+
+/* Estilos para el Pie de Página */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Media Queries para Responsividad (Opcional, pero recomendado para móviles) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        margin: 10px auto;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .dates {
+        float: none; /* Elimina el float en pantallas pequeñas */
+        display: block; /* Hace que las fechas tomen su propia línea */
+        margin-top: 5px; /* Espacio entre el título/compañía y las fechas */
+    }
+    .skills-section ul {
+        justify-content: center; /* Centra las habilidades en móviles */
+    }
+}
